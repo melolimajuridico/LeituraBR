@@ -1,8 +1,8 @@
 
 - titulo: "Livro Exemplo 1"
-  descricao: "Uma leitura essencial para quem busca conhecimento prático."
-  imagem: "/img/livros/livro1.jpg"
-  link: "https://seulinkdevenda.com/livro1"
+  descricao: "Primeiros Socorros em caso de celular roubado."
+  imagem: "static/img/livros/celular-roubado.jpg"
+  link: "https://go.hotmart.com/N102935121N"
 
 - titulo: "Livro Exemplo 2"
   descricao: "Aprenda conceitos importantes de forma simples e direta."
