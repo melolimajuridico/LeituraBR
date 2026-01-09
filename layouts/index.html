@@ -12,15 +12,41 @@
   {{ partial "header.html" . }}
 
   <!-- HERO -->
-  <section class="hero">
-    <h1>LeituraBR</h1>
-    <p>Conhecimento que transforma. Escolha seu próximo livro.</p>
-    <a href="#livros" class="btn">Ver livros</a>
-  </section>
+ <!-- HERO -->
+<section class="hero">
+  <h1>Livros Práticos para o Dia a Dia</h1>
+
+  <h2>
+    Conhecimento acessível em livros claros, objetivos e fáceis de aplicar
+  </h2>
+
+  <p>
+    O LeituraBR é um espaço dedicado à organização e divulgação de livros práticos
+    sobre diversos temas. Aqui você encontra conteúdos pensados para facilitar o
+    entendimento, ajudar na tomada de decisões e oferecer informação útil para
+    situações do cotidiano. Os livros disponíveis podem ser digitais ou físicos,
+    sempre apresentados de forma clara, direta e acessível.
+  </p>
+
+  <p>
+    A proposta do LeituraBR é reunir livros que priorizam a objetividade e a utilidade
+    prática, permitindo que qualquer pessoa encontre rapidamente o conteúdo que
+    procura. Os títulos são organizados para facilitar a navegação, a comparação e
+    o acesso às informações mais relevantes.
+  </p>
+
+  <a href="#livros" class="btn">Encontrar livros</a>
+</section>
+
 
   <!-- LIVROS -->
   <section id="livros" class="livros">
     <h2>Livros disponíveis</h2>
+<p>
+  Explore os livros disponíveis e escolha aquele que melhor atende à sua necessidade
+  no momento. Cada título apresenta uma descrição objetiva, com foco no conteúdo e
+  na aplicação prática do tema abordado.
+</p>
 
     <div class="livros-grid">
       {{ range .Site.Data.livros }}
