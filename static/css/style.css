@@ -8,6 +8,16 @@
   z-index: 1000;
   border-bottom: 1px solid #2a2a2a;
 }
+.site-header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo-principal {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
 
 .header-container {
   max-width: 1200px;
