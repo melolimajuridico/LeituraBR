@@ -1,7 +1,6 @@
 baseURL = "https://br-brasil.github.io/LeituraBR/"
 languageCode = "pt-br"
 title = "LeituraBR"
-theme = ""
 paginate = 10
 
 [params]
