@@ -1,6 +1,6 @@
 <header class="site-header">
   <img 
-    src="/img/livros/logo-melo-lima.jpg" 
+    src="/img/livros/livro1/logoleituraBR.jpg" 
     alt="Melo Lima Soluções Práticas"
     class="logo-principal"
   >
