@@ -30,8 +30,8 @@ jobs:
           hugo-version: '0.128.0'
           extended: true
 
-      - name: Build
-        run: hugo --minify
+     - name: Build
+      run: hugo --minify --baseURL "https://br-brasil.github.io/LeituraBR/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
