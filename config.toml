@@ -1,4 +1,5 @@
 baseURL = "https://br-brasil.github.io/LeituraBR/"
+publishDir = "public"
 languageCode = "pt-br"
 title = "LeituraBR"
 paginate = 10
