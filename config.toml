@@ -1,4 +1,6 @@
 baseURL = "https://br-brasil.github.io/LeituraBR/"
+canonifyURLs = true
+relativeURLs = false
 publishDir = "public"
 languageCode = "pt-br"
 title = "LeituraBR"
