@@ -8,10 +8,6 @@
   z-index: 1000;
   border-bottom: 1px solid #2a2a2a;
 }
-.site-header {
-  padding: 20px 0;
-  text-align: center;
-}
 
 .logo-principal {
   max-width: 220px;
@@ -35,21 +31,6 @@
 }
 
 /* MENU */
-.main-nav {
-  display: flex;
-  gap: 28px;
-}
-
-.main-nav a {
-  color: #d4af37; /* dourado */
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.main-nav a:hover {
-  opacity: 0.8;
-}
 
 /* COMPENSA O HEADER FIXO */
 body {
@@ -138,4 +119,49 @@ body {
     font-size: 16px;
   }
 }
+/* CONTAINER HEADER (logo + menu lado a lado) */
+.container-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* MENU PRINCIPAL */
+.menu-principal ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* TAMANHO 150% (base anterior ~15px → agora ~22px) */
+.menu-principal a {
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #d4af37;
+  transition: opacity 0.3s ease;
+}
+
+.menu-principal a:hover {
+  opacity: 0.8;
+}
+
+/* LINKS INDIVIDUAIS — EDITÁVEIS UM A UM */
+.menu-avisos {
+  /* exemplo: color: red; */
+}
+
+.menu-lancamentos {
+  /* exemplo: font-weight: 600; */
+}
+
+.menu-contato {
+  /* exemplo: text-transform: uppercase; */
+}
+
 
