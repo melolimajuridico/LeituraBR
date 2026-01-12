@@ -1,1 +1,115 @@
+{{ partial "header.html" . }}
 
+<!-- HERO -->
+<section class="hero">
+  <h1>Livros Práticos para o Dia a Dia</h1>
+
+  <h2>
+    Conhecimento acessível em livros claros, objetivos e fáceis de aplicar
+  </h2>
+
+  <p>
+    O LeituraBR é um espaço dedicado à organização e divulgação de livros práticos
+    sobre diversos temas. Aqui você encontra conteúdos pensados para facilitar o
+    entendimento, apoiar a tomada de decisões e oferecer informação útil para
+    situações do cotidiano. Os livros disponíveis podem ser digitais ou físicos,
+    sempre apresentados de forma clara, direta e acessível.
+  </p>
+
+  <p>
+    A proposta do LeituraBR é reunir livros que priorizam a objetividade e a utilidade
+    prática, permitindo que qualquer pessoa encontre rapidamente o conteúdo que
+    procura. Os títulos são organizados para facilitar a navegação, a comparação e
+    o acesso às informações mais relevantes.
+  </p>
+
+  <a href="#livros" class="btn">Encontrar livros</a>
+</section>
+
+<!-- LIVROS -->
+<section id="livros" class="livros">
+  <h2>Livros disponíveis</h2>
+
+  <p>
+    Explore os livros disponíveis e escolha aquele que melhor atende à sua necessidade
+    no momento. Cada título apresenta uma descrição objetiva, com foco no conteúdo e
+    na aplicação prática do tema abordado.
+  </p>
+
+  <div class="livros-grid">
+    {{ range .Site.Data.livros }}
+      <div class="livro-card">
+        <img src="{{ .imagem }}" alt="{{ .titulo }}">
+        <h3>{{ .titulo }}</h3>
+        <p>{{ .descricao }}</p>
+        <a href="{{ .link }}" class="btn" target="_blank">Comprar</a>
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+  <h2>Comece agora</h2>
+  <p>Invista em leitura, invista em você.</p>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+  <p>© {{ now.Year }} LeituraBR</p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que são livros práticos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Livros práticos são aqueles focados na aplicação direta do conhecimento, com linguagem clara e orientada para resolver situações reais do dia a dia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Os livros disponíveis são digitais ou físicos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O LeituraBR reúne livros digitais e físicos, conforme a proposta de cada obra. Essa informação é indicada na descrição de cada título."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Para quem os livros do LeituraBR são indicados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os livros são indicados para qualquer pessoa que busca informação objetiva, organizada e fácil de compreender."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como adquirir um livro disponível no site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cada livro possui um link direto para compra ou acesso, informado na própria página do título."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Os conteúdos são atualizados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sempre que necessário, as informações e indicações dos livros são revisadas para garantir clareza e utilidade ao leitor."
+      }
+    }
+  ]
+}
+</script>
+
+  ]
+}
+</script>
+
+</html>
